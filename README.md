@@ -2,6 +2,8 @@
 
 > _What could be more fun than having a pet? Making your own!_
 
+[View live on gh-pages](https://matt123miller.github.io/bots-frontend-animal-test)
+
 ## Initial Thoughts
 
 - Each animal can be a little object with a bundle of values and distinct hunger, happiness and sleep rates.
