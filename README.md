@@ -14,7 +14,7 @@
 
 ## TODO
 
-- [] Get this onto github actions and pages to have CI/CD
+- [x] Get this onto github actions and pages to have CI/CD
 - [] Create an animal component
 - [] Create a form to create animals with a name and a type
 - [] Create a timer
