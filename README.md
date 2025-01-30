@@ -14,6 +14,11 @@
 
 ## TODO
 
+- [] Get this onto github actions and pages to have CI/CD
+- [] Create an animal component
+- [] Create a form to create animals with a name and a type
+- [] Create a timer
+
 ## What is this?
 
 Your job is to create your own digital pet platform using this codebase as a starting point - how you continue is up to you!
