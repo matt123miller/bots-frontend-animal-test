@@ -2,6 +2,18 @@
 
 > _What could be more fun than having a pet? Making your own!_
 
+## Initial Thoughts
+
+- Each animal can be a little object with a bundle of values and distinct hunger, happiness and sleep rates.
+- Changing their values over time is a good fit for `useReducer`.
+- Need to hook up a simple timer, maybe have the time rate editable in the UI for testing?
+- Each animal can be a component. Maybe I can change the colour of the poodle svg to differentiate.
+- The logic can go in a custom hook.
+- Need a way of creating animals by opening a form to name them and select a type.
+- Need to remind myself how to test react hooks over time.
+
+## TODO
+
 ## What is this?
 
 Your job is to create your own digital pet platform using this codebase as a starting point - how you continue is up to you!
