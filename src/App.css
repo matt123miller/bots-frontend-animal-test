@@ -77,14 +77,29 @@ button:focus-visible {
 #root {
   width: 100vw;
   height: 100vh;
-} 
+}
 
-
+.centred-flex-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .animal-page > button {
-
   margin: 20px;
+}
 
+.new-animal-form {
+  padding: 20px;
+}
+
+.new-animal-form-row label {
+  display: block;
+}
+
+.new-animal-form-row input {
+  margin-bottom: 10px;
 }
 
 .animal-wrapper {
@@ -103,7 +118,6 @@ button:focus-visible {
   width: 350px;
   background-color: #f9f9f9;
   color: #2196f3;
- 
 }
 
 .animal-animal {
@@ -120,7 +134,6 @@ button:focus-visible {
 .animal-stats {
   margin-top: 20px;
   display: flex;
-
 }
 
 .stat {
