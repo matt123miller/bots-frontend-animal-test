@@ -6,17 +6,19 @@ import { AnimalType } from "./SharedTypes";
 
 function App() {
   const [newClick, setNewClicked] = useState(false);
-  const animals: Array<AnimalType> = [
-    {
-      name: "Drago",
-      type: "Dog",
-      data: { hunger: 10, happiness: 10, sleepiness: 10 },
-    },
-  ];
+  const [animals, setAnimals] = useState<AnimalType[]>([]);
 
   return (
-    <div className="animal-page">
-      {newClick && <NewAnimal />}
+    <div className="centred-flex-layout animal-page">
+      {newClick && (
+        <NewAnimal
+          onCreation={(newAnimal) => {
+            setNewClicked(false);
+            setAnimals([...animals, newAnimal]);
+            console.log(newAnimal);
+          }}
+        />
+      )}
       {!newClick && (
         <>
           <button onClick={() => setNewClicked(true)}>Add Animal</button>
@@ -26,7 +28,7 @@ function App() {
               <Animal
                 key={animal.name}
                 name={animal.name}
-                type={animal.type}
+                breed={animal.breed}
                 data={animal.data}
               />
             ))}

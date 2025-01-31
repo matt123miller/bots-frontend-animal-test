@@ -2,11 +2,11 @@ import { AnimalType } from "./SharedTypes";
 
 export type AnimalProps = AnimalType & {};
 
-export const Animal = ({ name, type, data }: AnimalProps) => {
+export const Animal = ({ name, breed, data }: AnimalProps) => {
   return (
     <>
       <div className="animal-container">
-        <h1>{type}</h1>
+        <h1>{breed}</h1>
         <div className="animal-animal">
           <img src="./poodle.svg" alt="Your animal" className="animal-image" />
           <h2>{name}</h2>
