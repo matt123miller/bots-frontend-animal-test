@@ -14,12 +14,20 @@
 - Need a way of creating animals by opening a form to name them and select a type.
 - Need to remind myself how to test react hooks over time.
 
-## TODO
+## Ongoing notes
 
 - [x] Get this onto github actions and pages to have CI/CD
-- [] Create an animal component
-- [] Create a form to create animals with a name and a type
-- [] Create a timer
+- [x] Create an animal component
+- [x] Create a form to create animals with a name and a type
+- [x] Create a timer
+
+Now I'm this far and hooked up the timer I realise with my current code it will reset the timer each time you create a new animal, so fix that I guess.
+
+- [] rethink data or ui layout to allow existing animals to carry on updating while creating a new one
+
+---
+
+# Initial README
 
 ## What is this?
 

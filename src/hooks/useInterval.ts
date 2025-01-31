@@ -18,7 +18,7 @@ export default function useInterval(cb: VoidFunction, delay: number) {
 
   // Create the interval in an effect, created whenever delay changes.
   useEffect(() => {
-    if (delay === undefined || delay === null || delay < 0) {
+    if (delay === undefined || delay === null || delay === 0) {
       return () => {};
     }
 
