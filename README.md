@@ -23,7 +23,8 @@
 
 Now I'm this far and hooked up the timer I realise with my current code it will reset the timer each time you create a new animal, so fix that I guess.
 
-- [] rethink data or ui layout to allow existing animals to carry on updating while creating a new one
+- [x] rethink data or ui layout to allow existing animals to carry on updating while creating a new one
+- [] Create hook for animal stat change mechanics
 
 ---
 
