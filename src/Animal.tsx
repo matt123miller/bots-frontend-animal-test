@@ -4,7 +4,7 @@ import { AnimalType } from "./SharedTypes";
 export type AnimalProps = AnimalType & {};
 
 export const Animal = ({ name, breed, data }: AnimalProps) => {
-  const { timeSinceStarted } = usePeriodicUpdate(10);
+  const { timeSinceStarted } = usePeriodicUpdate(1000);
   return (
     <div className="animal-container">
       <h1>{breed}</h1>

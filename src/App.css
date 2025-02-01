@@ -120,8 +120,10 @@ button:focus-visible {
   color: #2196f3;
 }
 
-.animal-animal {
+.animal-container input[type="text"] {
   margin-bottom: 20px;
+  background-color: whitesmoke;
+  color: #213547;
 }
 
 .animal-image {
