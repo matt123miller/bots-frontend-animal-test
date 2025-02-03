@@ -8,7 +8,7 @@ import { useEffect, useRef } from "react";
  * @param delay The delay after which to call the callback, in milliseconds.
  */
 export default function useInterval(cb: VoidFunction, delay: number) {
-  const callbackRef = useRef<() => void>();
+  const callbackRef = useRef<() => void>(() => {});
 
   // update callback function whenever that changes.
   // In this programming test that won't happen but still, good practice.
