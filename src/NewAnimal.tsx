@@ -34,7 +34,7 @@ export function NewAnimal({ onCreation }: NewAnimalProps) {
 
       {!newClick && (
         <button className="action-button" onClick={() => setNewClicked(true)}>
-          Create
+          New
         </button>
       )}
       {newClick && (
