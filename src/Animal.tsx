@@ -12,7 +12,7 @@ export const Animal = ({ name, breed, data }: AnimalProps) => {
       <h1>{breed}</h1>
       <div className="animal-animal">
         <img
-          src="./poodle.svg"
+          src="/poodle.svg"
           alt={`${name}, a fine ${breed}`}
           className="animal-image"
         />
