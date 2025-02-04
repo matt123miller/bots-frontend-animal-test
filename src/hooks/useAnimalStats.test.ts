@@ -15,10 +15,19 @@ describe("useAnimalStats hook", () => {
 
   it("Should initialize with the correct values, starting with the supplied initial values", () => {
     const { result } = renderHook(() =>
-      useAnimalStats({ hunger: 10, happiness: 10, sleepiness: 10 }, 1000)
+      useAnimalStats(
+        {
+          hunger: 10,
+          happiness: 10,
+          sleepiness: 10,
+          hungerRate: 1,
+          happinessRate: 1,
+          sleepinessRate: 1,
+        },
+        1000
+      )
     );
-    const { values, updateHunger, updateHappiness, updateSleepiness } =
-      result.current;
+    const { values } = result.current;
 
     // The initial values are ticked by 1
     expect(values).toMatchObject({
@@ -30,7 +39,17 @@ describe("useAnimalStats hook", () => {
 
   it("Should update the values correctly when state change functions are called", async () => {
     const { result } = renderHook(() =>
-      useAnimalStats({ hunger: 10, happiness: 10, sleepiness: 10 }, 50)
+      useAnimalStats(
+        {
+          hunger: 10,
+          happiness: 10,
+          sleepiness: 10,
+          hungerRate: 1,
+          happinessRate: 1,
+          sleepinessRate: 1,
+        },
+        50
+      )
     );
     const { updateHunger, updateHappiness, updateSleepiness } = result.current;
 
@@ -52,7 +71,17 @@ describe("useAnimalStats hook", () => {
 
   it("Should update the values correctly over time", async () => {
     const { result } = renderHook(() =>
-      useAnimalStats({ hunger: 10, happiness: 10, sleepiness: 10 }, 50)
+      useAnimalStats(
+        {
+          hunger: 10,
+          happiness: 10,
+          sleepiness: 10,
+          hungerRate: 1,
+          happinessRate: 1,
+          sleepinessRate: 1,
+        },
+        50
+      )
     );
     const valuesBefore = result.current.values;
 
@@ -83,7 +112,17 @@ describe("useAnimalStats hook", () => {
 
   it("Should update the happiness value at the increased rate when hunger and sleepiness are full", async () => {
     const { result } = renderHook(() =>
-      useAnimalStats({ hunger: 98, happiness: 50, sleepiness: 98 }, 50)
+      useAnimalStats(
+        {
+          hunger: 98,
+          happiness: 50,
+          sleepiness: 98,
+          hungerRate: 1,
+          happinessRate: 1,
+          sleepinessRate: 1,
+        },
+        50
+      )
     );
 
     // initial setup, 0th tick

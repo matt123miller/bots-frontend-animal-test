@@ -35,6 +35,7 @@ function reducer(state: AnimalStats, action: Actions) {
       const tickedHappiness = Math.max(0, state.happiness - happinessModifier);
 
       return {
+        ...state,
         happiness: tickedHappiness,
         hunger: Math.min(100, state.hunger + rateModifier),
         sleepiness: Math.min(100, state.sleepiness + rateModifier),
