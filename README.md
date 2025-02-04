@@ -29,6 +29,9 @@ Now I'm this far and hooked up the timer I realise with my current code it will 
 
 I've realised I misread the requirements. Each animal should start with "neutral" stats, presumably 50, and they should change at different rates depending on the breed.
 
+- [x] Add change rates to the source data
+- [x] Update the logic and tests to account for the new change rate values
+
 ## Next steps
 
 - [] I could add game settings like speed or difficulty, wrap the whole app in a settings provider and use those values where appropriate
