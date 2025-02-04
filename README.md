@@ -24,7 +24,15 @@
 Now I'm this far and hooked up the timer I realise with my current code it will reset the timer each time you create a new animal, so fix that I guess.
 
 - [x] rethink data or ui layout to allow existing animals to carry on updating while creating a new one
-- [] Create hook for animal stat change mechanics
+- [x] Create hook for animal stat change mechanics
+- [x] Use the new hook in the UI
+
+I've realised I misread the requirements. Each animal should start with "neutral" stats, presumably 50, and they should change at different rates depending on the breed.
+
+## Next steps
+
+- [] I could add game settings like speed or difficulty, wrap the whole app in a settings provider and use those values where appropriate
+- [] Add periodic local storage game saving
 
 ---
 
