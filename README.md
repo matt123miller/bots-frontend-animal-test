@@ -4,6 +4,8 @@
 
 [View live on gh-pages](https://matt123miller.github.io/bots-frontend-animal-test)
 
+I wrote up some post-test notes you can find [here](./post-test-notes.md)
+
 ## Initial Thoughts
 
 - Each animal can be a little object with a bundle of values and distinct hunger, happiness and sleep rates.
